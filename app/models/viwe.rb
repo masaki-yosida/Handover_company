@@ -1,0 +1,2 @@
+class Viwe < ApplicationRecord
+end
