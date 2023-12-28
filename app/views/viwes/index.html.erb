@@ -1,1 +1,18 @@
-<h1>a</h1>
+<div id="wrapper">
+  <div class="wrap">
+    <div class="content"><h1>業務引継ぎアプリ</h1></div>
+     <div class="content">
+      <% if user_signed_in? %>
+        <div class= "name con">ヨウコソ: <%= current_user.nickname %>様</div>
+        <%= link_to 'ログアウト', destroy_user_session_path, data: { turbo_method: :delete },class: "form" %>
+      <% else %>
+        <!-- ログインしていない場合の表示 -->
+        <%= link_to 'ログイン', new_user_session_path, data: { turbo: false },class: "form" %>
+        <%= link_to '新規登録', new_user_registration_path, data: { turbo: false },class: "form" %>
+      <% end %>
+    </div>
+    <div class="content">
+      <p class=masa>© 2024 Masaki_yoshida.</p>
+    </div>
+  </div>
+</div>
