@@ -1,24 +1,42 @@
-# README
+# アプリケーション名
+未定
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション概要
+業務の引き継ぎのマニュアル作成、変更、削除
+在庫の管理
 
-Things you may want to cover:
+# URL
+# 利用方法
 
-* Ruby version
+# アプリケーションを作成した背景
 
-* System dependencies
 
-* Configuration
+# 実装予定の機能
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+# データベース設計
+# 画面遷移図
+# 開発環境
+*フロントエンド言語：JavaScript、HTML、CSS
 
-* Deployment instructions
+*バックエンドフレームワーク：Rails7.0.0 
 
-* ...
+*バックエンド言語:Ruby3.2.0
+
+*ミドルウェア：Mysql0.5.5、PostgreSQL
+
+*インフラ：Heroku
+# 工夫したポイント
+
+
+# 改善点
+
+
+
+
+# 制作時間
+
+# 歴史
+
