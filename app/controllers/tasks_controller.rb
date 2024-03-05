@@ -6,7 +6,11 @@ class TasksController < ApplicationController
   def new
     @task = Task.new
   end
-
+  
+  def index
+    @tasks = current_user.tasks.all
+  end
+  
   def create
     @task = current_user.tasks.build(task_params)
     if @task.save
