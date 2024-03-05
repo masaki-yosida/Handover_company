@@ -5,6 +5,7 @@
       <% if user_signed_in? %>
         <div class= "name con">現在ログインしているのは: <%= current_user.nickname %>様</div>
         <%= link_to 'ログアウト', destroy_user_session_path, data: { turbo_method: :delete },class: "form" %>
+        <%= link_to "新しい業務登録", new_task_path, class: "btn btn-primary" %>
       <% else %>
         <!-- ログインしていない場合の表示 -->
         <%= link_to 'ログイン', new_user_session_path, data: { turbo: false },class: "form" %>
