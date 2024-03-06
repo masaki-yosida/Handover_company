@@ -1,0 +1,8 @@
+<!-- app/views/tasks/show.html.erb -->
+
+<h1><%= @task.title %></h1>
+<p><strong>部署名:</strong> <%= @task.name %></p>
+<p><strong>内容:</strong> <%= @task.content %></p>
+<p><strong>作成者:</strong> <%= @task.user.nickname %></p>
+<p><strong>作成日時:</strong> <%= @task.created_at %></p>
+<%= link_to 'Back', tasks_path %>

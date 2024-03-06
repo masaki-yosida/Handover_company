@@ -2,25 +2,18 @@
 
 <h1>業務一覧</h1>
 
-
 <table class="table">
   <thead>
     <tr>
       <th>業務名</th>
       <th>部署名</th>
-      <th>内容</th>
-      <th>作成者</th>
-      <th>作成日時</th>
     </tr>
   </thead>
   <tbody>
     <% @tasks.each do |task| %>
       <tr>
-        <td><%= task.title %></td>
+        <td><%= link_to task.title, task_path(task) %></td> <!-- タスクの詳細ページへのリンクを追加 -->
         <td><%= task.name %></td>
-        <td><%= task.content %></td>
-        <td><%= task.user.nickname %></td>
-        <td><%= task.created_at %></td>
       </tr>
     <% end %>
   </tbody>
