@@ -1,14 +1,14 @@
 # app/controllers/tasks_controller.rb
 
 class TasksController < ApplicationController
-  before_action :authenticate_user!
+   # before_action :authenticate_user! # ログインチェックをスキップする
 
   def new
     @task = Task.new
   end
   
   def index
-    @tasks = current_user.tasks.all
+    @tasks = Task.all
   end
   
   def create
